@@ -1,0 +1,110 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1 {
+    color: #2e7d32;
+}
+
+
+
+/* Pagina Cadastro/Login */
+
+
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;  /* Centraliza o formulário na tela */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    /**margin-bottom: ;**/
+    margin-top: 2%;
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%;  /* Faz o input ocupar toda a largura do seu container */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+}
+
+input[type="submit"] {
+    width: 100%;  /* Faz o botão de envio ocupar toda a largura do container */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* Cabeçalho*/
+
+
+.cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    color: #2e7d32;
+    font-weight: bold;
+
+}
+
+.user {
+    margin: 0;
+    margin-right: 1%;
+}
+
+.cabeca a {
+    margin-right: 1%;
+}
+
+
+
+/* Menu*/
+
+.menu{
+
+    margin-left: 1%;
+}
+
+.menu a {
+    display: flex;
+    align-items: center; /* Alinha ícone e texto na mesma linha */
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 1px;
+}
+
+.menu img {
+    margin-right: 10px;
+    width: 30px;
+}

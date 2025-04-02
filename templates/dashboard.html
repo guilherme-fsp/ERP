@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Página do Usuário</title>
+</head>
+<body>
+    <div class="cabeca">
+        <h class="user"> {{ username }}</h>
+        <a href="{{ url_for('logout') }}">Sair</a>
+        <p>Você está logado no sistema.</p>
+    </div>
+
+    <div class="menu">
+
+        <a href="{{ url_for('dashboard') }}">Dashboard</a><br><br>
+        
+        <a href="{{ url_for('obra') }}">Obra</a><br><br>
+       
+        <a href="{{ url_for('engenharia') }}">
+            <img src="{{ url_for('static', filename='imagens/eng.png') }}" alt="Ícone Eng" width="25">
+            Engenharia</a><br><br>
+       
+        <a href="{{ url_for('suprimento') }}">Suprimentos</a><br><br>
+       
+        <a href="{{ url_for('compra') }}">Compras</a><br><br>
+        
+        <a href="{{ url_for('financeiro') }}">Financeiro</a><br><br>
+      
+        <a href="{{ url_for('venda') }}">Vendas</a><br><br>
+    
+        <a href="{{ url_for('pagamento') }}">Folha de Pagamento</a><br><br>
+    
+        <a href="{{ url_for('cadastrar') }}">Cadastros</a><br><br>
+
+
+    </div>
+</body>
+</html>
